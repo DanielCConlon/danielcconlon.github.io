@@ -4,8 +4,8 @@ import profilePic from "../../utils/images/profilepic.jpg";
 
 function About () {
     return (
-        <section id="about">
-            <div id="about-header">
+        <section id="about-container">
+            <div id="about">
                 <h1>About Me</h1>
             </div>
 

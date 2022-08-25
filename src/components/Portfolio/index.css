@@ -1,0 +1,19 @@
+:root {
+    --spacing-one: calc(1rem * 0.5);
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  .mx-1 {
+    margin-right: var(--spacing-one);
+    margin-left: var(--spacing-one);
+  }
+
+  .img-thumbnail {
+    width: auto;
+    height: 300px;
+    margin-bottom: 50px;
+}
