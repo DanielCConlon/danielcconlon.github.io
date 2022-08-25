@@ -10,7 +10,7 @@
   .mx-1 {
     margin-right: var(--spacing-one);
     margin-left: var(--spacing-one);
-  }
+}
 
   .img-thumbnail {
     width: auto;
