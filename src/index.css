@@ -2,10 +2,6 @@ img {
   max-width: 100%;
 }
 
-li {
-  list-style: none;
-}
-
 .img-thumbnail {
   width: auto;
   height: 300px;
