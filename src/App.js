@@ -1,13 +1,14 @@
+import React from "react";
 import About from './components/About';
-import Nav from './components/Nav';
-import Gallery from './components/Gallery';
+import Portfolio from './components/Portfolio';
 
 function App() {
+
+
+
   return (
     <div>
-      <Nav />
       <main>
-        <About />
       </main>
     </div>
   );
