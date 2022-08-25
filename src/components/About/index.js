@@ -1,10 +1,11 @@
 import React from "react";
+import './index.css';
 import profilePic from "../../utils/images/profilepic.jpg";
 
 function About () {
     return (
         <section id="about">
-            <div>
+            <div id="about-header">
                 <h1>About Me</h1>
             </div>
 

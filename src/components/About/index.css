@@ -1,0 +1,20 @@
+#about-header h1 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid slateblue;
+}
+
+#about-info {
+    display: flex;
+    align-items: center;
+}
+
+#about-info img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#about-info p {
+    padding: 1rem;
+}
