@@ -1,6 +1,7 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Portfolio() {
@@ -57,17 +58,19 @@ function Portfolio() {
 
     return (
         <section>
-            {Projects.map((project) => (
-                <Card style={{ width: '18rem' }} key={project.name}>
-                    <Card.Img variant="top" src={project.src} className="img-thumbnail mx-1" />
-                    <Card.Body>
-                        <Card.Title>{project.name}</Card.Title>
-                        <Card.Text>{project.description}</Card.Text>
-                        <a href={project.github} target="_blank" rel="noreferrer"><Button variant="dark">GitHub Repo</Button></a>
-                        <a href={project.livesite} target="_blank" rel="noreferrer"><Button variant="dark">Live Site</Button></a>
-                    </Card.Body>
-                </Card>
-            ))}
+            <Row xs={1} md={2} className="g-4">
+                {Projects.map((project) => (
+                    <Card style={{ width: '18rem' }} key={project.name}>
+                        <Card.Img variant="top" src={project.src} className="mx-1" />
+                        <Card.Body>
+                            <Card.Title>{project.name}</Card.Title>
+                            <Card.Text>{project.description}</Card.Text>
+                            <a href={project.github} target="_blank" rel="noreferrer"><Button variant="dark">GitHub Repo</Button></a>
+                            <a href={project.livesite} target="_blank" rel="noreferrer"><Button variant="dark">Live Site</Button></a>
+                        </Card.Body>
+                    </Card>
+                ))}
+            </Row>
         </section>
     );
 }
