@@ -1,6 +1,5 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import ProjectCard from "../ProjectCard";
 import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -49,26 +48,18 @@ function Portfolio() {
 
         {
             name: 'Code Quiz',
-            description: `This repo is building a coding quiz that uses local storage to save your score for all of the attempts. It also uses 2 HTML pages, one for highscores and index.html. Index.html is the main file that hold the first page, highscores holds all of the scores saved from local storage, if you click clear it will wipe all of the localstorage.`,
+            description: `This repo is building a coding quiz that uses local storage to save your score for all of the attempts. Index.html is the main file that hold the first page, highscores holds all of the scores saved from local storage, if you click clear it will wipe all of the localstorage.`,
             src: require('../../utils/images/code-quiz.PNG'),
             github: 'https://github.com/DanielCConlon/code-quiz',
             livesite: 'https://danielcconlon.github.io/code-quiz/'
         }
     ]
 
-    return (
+    return(
         <section>
             <Row xs={1} md={2} className="g-4">
                 {Projects.map((project) => (
-                    <Card style={{ width: '18rem' }} key={project.name}>
-                        <Card.Img variant="top" src={project.src} className="mx-1" />
-                        <Card.Body>
-                            <Card.Title>{project.name}</Card.Title>
-                            <Card.Text>{project.description}</Card.Text>
-                            <a href={project.github} target="_blank" rel="noreferrer"><Button variant="dark">GitHub Repo</Button></a>
-                            <a href={project.livesite} target="_blank" rel="noreferrer"><Button variant="dark">Live Site</Button></a>
-                        </Card.Body>
-                    </Card>
+                    <ProjectCard project={project} />
                 ))}
             </Row>
         </section>
