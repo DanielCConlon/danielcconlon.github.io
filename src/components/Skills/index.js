@@ -1,4 +1,8 @@
 import React from "react";
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Skills() {
 
@@ -70,13 +74,17 @@ function Skills() {
                 <h2>Skills</h2>
             </div>
 
-            <div>
-                {icons.map((iconInfo) => (
-                    <div key={iconInfo.name}>
-                        {iconInfo.name}
-                        <img src={iconInfo.imageIcon} alt="Icon pic" />
-                    </div>
+            <div id="skillsInfo">
+                <Row>
+                    {icons.map((iconInfo) => (
+                        <Col sm="6" lg="4">
+                            <div id="skillsName" key={iconInfo.name}>
+                                {iconInfo.name}
+                            </div>
+                            <img src={iconInfo.imageIcon} alt="Icon pic" />
+                        </Col>
                     ))}
+                </Row>
             </div>
 
         </section>
