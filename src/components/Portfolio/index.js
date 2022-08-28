@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "../ProjectCard";
 import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Col from "react-bootstrap/esm/Col";
 
 function Portfolio() {
 
@@ -56,10 +57,12 @@ function Portfolio() {
     ]
 
     return(
-        <section>
-            <Row xs={1} md={2} className="g-4">
+        <section id="projectContainer">
+            <Row>
                 {Projects.map((project) => (
-                    <ProjectCard project={project} />
+                    <Col>
+                        <ProjectCard project={project} />
+                    </Col>
                 ))}
             </Row>
         </section>
