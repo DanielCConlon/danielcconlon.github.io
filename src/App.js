@@ -3,6 +3,7 @@ import About from "./components/About";
 import Nav from "./components/Nav";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Portfolio></Portfolio>
       </main>
       <Skills />
+      <Contact />
     </div>
   );
 }
