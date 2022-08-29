@@ -15,8 +15,6 @@ function Nav(props) {
       document.title = currentPage.name;
     }, [currentPage]);
 
-    console.log(currentPage)
-
     return(
       <header>
         <h2>A logo will go here</h2>
