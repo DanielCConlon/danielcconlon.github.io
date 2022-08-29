@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-import Skills from "./components/Skills";
+// import Skills from "./components/Skills";
 
 
 function App() {
@@ -26,6 +26,16 @@ const [pages] = useState([
 const [currentPage, setCurrentPage] = useState(pages[0]);
 const [pageSelected, setPageSelected] = useState(false);
 
+function renderPage() {
+  switch(currentPage) {
+    case pages[0]:
+      return <About></About>
+    case pages[1]:
+      return <Portfolio></Portfolio>
+    default:
+      return null
+  }
+}
 
   return (
     <div>
@@ -38,16 +48,7 @@ const [pageSelected, setPageSelected] = useState(false);
       ></Nav>
 
       <main>
-        {!pageSelected ? (
-          <>
-            <About currentPage={currentPage} ></About>
-          </>
-        ) : (
-          <>
-            <Portfolio currentPage={currentPage} ></Portfolio>
-            <Skills currentPage={currentPage} ></Skills>
-          </>
-        )}
+        {renderPage()}
       </main>
     </div>
 

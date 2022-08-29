@@ -3,7 +3,7 @@ import './index.css';
 
 function Nav(props) {
   const {
-    pages = [],
+    pages,
     setCurrentPage,
     currentPage,
     pageSelected,
@@ -14,6 +14,8 @@ function Nav(props) {
     useEffect(() => {
       document.title = currentPage.name;
     }, [currentPage]);
+
+    console.log(currentPage)
 
     return(
       <header>
