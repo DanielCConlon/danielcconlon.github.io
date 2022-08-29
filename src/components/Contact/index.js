@@ -1,17 +1,19 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 import { isValidEmail } from "../../utils/helpers/helpers";
 import emailjs from 'emailjs-com';
 
 function Contact() {
+
+    const form = useRef();
 
     const [errorMessage, setErrorMessage] = useState('');
 
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
 
-    function handleChange(e) {
-        if (e.target.name === 'email') {
-            const isValid = isValidEmail(e.target.value);
+    function handleChange(event) {
+        if (event.target.name === 'email') {
+            const isValid = isValidEmail(event.target.value);
             console.log(isValid);
             // isValid conditional statement
             if (!isValid) {
@@ -22,8 +24,8 @@ function Contact() {
             }
         }
         else {
-            if (!e.target.value.length) {
-              setErrorMessage(`${e.target.name} is required.`);
+            if (!event.target.value.length) {
+              setErrorMessage(`${event.target.name} is required.`);
             } 
             else {
               setErrorMessage('');
@@ -31,28 +33,28 @@ function Contact() {
         }
 
         if (!errorMessage) {
-            setFormState({ ...formState, [e.target.name]: e.target.value });
+            setFormState({ ...formState, [event.target.name]: event.target.value });
         }
     }
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        
-        emailjs
-        .sendForm(
-            process.env.REACT_APP_SERVICE_ID,
-            process.env.REACT_APP_TEMPLATE_ID,
-            process.env.REACT_APP_PUBLIC_KEY
-        )
-        .then(response => console.log(response))
-        .then(error => console.log(error));
+    const sendEmail = (event) =>  {
+      event.preventDefault();
+
+      emailjs.sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(response => console.log(response))
+      .then(error => console.log(error));
     }
 
     // JSX
     return (
         <section>
           <h1 data-testid='h1tag'>Contact Me</h1>
-          <form id="contact-form" onSubmit={handleSubmit}>
+          <form id="contact-form" ref={form} onSubmit={sendEmail}>
             <div>
               <label htmlFor="name">Name:</label>
               <input type="text" defaultValue={name} onBlur={handleChange} name="name" />

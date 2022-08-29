@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 // import Skills from "./components/Skills";
 
 
@@ -32,6 +33,8 @@ function renderPage() {
       return <About></About>
     case pages[1]:
       return <Portfolio></Portfolio>
+    case pages[2]:
+      return <Contact></Contact>
     default:
       return null
   }
