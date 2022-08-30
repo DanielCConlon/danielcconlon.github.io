@@ -3,12 +3,17 @@
 - GithubPages: http://DanielCConlon.github.io/react-portfolio
 - Github URL: https://github.com/DanielCConlon/react-portfolio
 
+# Goal
+
+The goal of this application is to show my work off with a deployed application using React to potential employers.
+
 ## Table-of-Contents
 
 - [User Story](#userstory)
 - [Description](#description)
 - [Requirements](#Requirements)
 - [Application](#application)
+- [Questions](#questions)
 
 ## [User Story](#table-of-contents)
 
@@ -51,3 +56,11 @@ This React application displays a portfolio of the work I have done, my resume, 
 ## [Application](#table-of-contents)
 
 ![Website image](.//src//utils/images/application.PNG)
+
+## [Questions](#table-of-contents)
+
+To get into contact with me use the follow information below:
+<br />
+[Github: DanielCConlon](https://github.com/DanielCConlon)
+<br />
+[Email: danielcconlon@gmail.com](danielcconlon@gmail.com)
