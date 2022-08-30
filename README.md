@@ -1,6 +1,6 @@
 # React Portfolio
 
-- GithubPages: https://safe-gorge-07664.herokuapp.com/
+- GithubPages: http://DanielCConlon.github.io/react-portfolio
 - Github URL: https://github.com/DanielCConlon/react-portfolio
 
 ## Table-of-Contents
