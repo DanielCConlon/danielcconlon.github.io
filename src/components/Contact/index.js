@@ -1,6 +1,7 @@
 import React, {useState, useRef} from "react";
 import { isValidEmail } from "../../utils/helpers/helpers";
 import emailjs from 'emailjs-com';
+import "./index.css";
 
 function Contact() {
 
