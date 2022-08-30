@@ -4,6 +4,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 // import Skills from "./components/Skills";
+import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 
 
@@ -36,8 +37,10 @@ function renderPage() {
       return <Portfolio></Portfolio>
     case pages[2]:
       return <Contact></Contact>
+    case pages[3]:
+      return <Resume></Resume>
     default:
-      return null
+      return <About> </About>
   }
 }
 

@@ -17,7 +17,7 @@ function Nav(props) {
 
     return(
       <header>
-        <h2>A logo will go here</h2>
+        <h2>Daniel Conlon</h2>
         <nav>
           <ul>
             {pages.map((page) => (
