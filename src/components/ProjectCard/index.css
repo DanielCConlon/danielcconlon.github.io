@@ -1,3 +1,7 @@
+* {
+    color: cyan;
+}
+
 :root {
     --spacing-one: calc(1rem * 0.5);
 }

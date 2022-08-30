@@ -16,3 +16,8 @@ ul {
 span {
     padding: 5vw;
 }
+
+.navActive {
+    /* color: #F3A847 !important; */
+    color: yellow !important;
+  }
