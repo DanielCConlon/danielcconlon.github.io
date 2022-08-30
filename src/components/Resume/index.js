@@ -71,6 +71,7 @@ function Resume () {
             </Row>
 
             <Row>
+                <h4>Want to work together? Send an email at danielcconlon@gmail.com</h4>
                 <a download="Daniel_Conlon_Resume" href={resume}>
                     <Button style={{ width: '24rem', fontSize: '28px' }} variant="info">Resume</Button>
                 </a>
