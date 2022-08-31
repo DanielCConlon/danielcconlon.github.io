@@ -14,15 +14,19 @@ input {
     transition: box-shadow 0.2s;
   }
   
-  input:focus {
-    border: 1px solid #F3A847;
-    box-shadow: 0 0 .25rem rgba(76, 230, 222, 0.5);
-  }
+input:focus {
+  border: 1px solid #F3A847;
+  box-shadow: 0 0 .25rem rgba(76, 230, 222, 0.5);
+}
 
-  header {
-    color: cyan;
-  }
+header {
+  color: cyan;
+}
 
-  section {
-    color: cyan;
-  }
+section {
+  color: cyan;
+}
+
+button {
+  color: cyan;
+}

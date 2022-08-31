@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Col from "react-bootstrap/esm/Col";
 import './index.css';
+import Skills from "../Skills";
 
 function Portfolio() {
 
@@ -67,6 +68,7 @@ function Portfolio() {
                     </Col>
                 ))}
             </Row>
+            <Skills></Skills>
         </section>
     );
 }
