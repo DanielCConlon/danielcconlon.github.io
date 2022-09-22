@@ -26,6 +26,14 @@ function Portfolio() {
         },
 
         {
+            name: 'Carbon Footprint',
+            description: "This application is for an enviromentally-conscious user who wants to calculate their carbon footprint and learn more about how to offset it in order to positively impact the world's climate.",
+            src: require('../../utils/images/CarbonFootprint.png'),
+            github: 'https://github.com/nmsiegel1/carbon-footprint',
+            livesite: 'https://carbon-footsteps.herokuapp.com/'
+        },
+
+        {
             name: 'Tech Blog',
             description: 'CMS-style blog site where you can publish articles, blog posts, and thoughts and opinions.',
             src: require('../../utils/images/tech-blog.PNG'),

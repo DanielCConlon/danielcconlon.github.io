@@ -55,7 +55,7 @@ This React application displays a portfolio of the work I have done, my resume, 
 
 ## [Application](#table-of-contents)
 
-![Website image](.//src//utils/images/application.PNG)
+![Website image](./src/utils/images/application.PNG)
 
 ## [Questions](#table-of-contents)
 
