@@ -8,7 +8,7 @@ export default function ProjectCard(props) {
     const project = props.project
 
     return (
-        <Card style={{ width: '18rem' }} key={project.name}>
+        <Card style={{ width: '18rem', backgroundColor: '#2b393f' }} key={project.name}>
             <Card.Img variant="top" src={project.src} className="mx-1" />
             <Card.Body>
                 <Card.Title>{project.name}</Card.Title>

@@ -8,7 +8,7 @@ import resume from "../../utils/images/DanielConlonResume.pdf";
 
 function Resume () {
     return (
-        <section>
+        <section className="resume">
             <Row>
                 <Col>
                     <h3>Front-End Skills</h3>

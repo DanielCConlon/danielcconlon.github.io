@@ -2,6 +2,27 @@ header {
     z-index: 9999;
     justify-content: space-between;
     display: flex;
+
+    
+        --u:  13px;
+        --c1: #1d262a;
+        --c2: #191f22;
+        --c3: #18181a;
+        --c4: #2b393f;
+        --c5: #212c30;
+        --gp: 50%/ calc(var(--u) * 9) calc(var(--u) * 20);
+        --bp: calc(var(--u) * -4.5) calc(var(--u) * -10);
+        --bg: 
+            conic-gradient(from -45deg at 50% 11.2%, var(--c3) 0 45deg, var(--c2) 0 90deg, #fff0 0 100%)  var(--gp),
+            conic-gradient(from -45deg at 50% 22.65%,  var(--c1) 0 45deg, var(--c5) 0 90deg, #fff0 0 100%)  var(--gp),
+            conic-gradient(from 45deg at 75% 50%, var(--c3) 0 45deg, #fff0 0 100%)  var(--gp),
+            conic-gradient(from 45deg at 75% 50%, var(--c3) 0 45deg, #fff0 0 100%)  var(--gp),
+            conic-gradient(from 270deg at 25% 50%, var(--c2) 0 45deg, #fff0 0 100%)  var(--gp),
+            conic-gradient(from 270deg at 50% 50%, var(--c4) 0 45deg, var(--c3) 0 66deg, var(--c2) 0 90deg, var(--c3) 0 114deg, var(--c2) 0 135deg,  var(--c5) 0 180deg, #fff0 0 100%) var(--gp);
+        background: var(--bg),var(--bg);
+        background-position:	var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+        height: 100%;
+    
 }
 
 ul {

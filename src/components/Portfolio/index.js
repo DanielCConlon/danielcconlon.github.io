@@ -71,7 +71,7 @@ function Portfolio() {
             <h2>Portfolio</h2>
             <Row>
                 {Projects.map((project) => (
-                    <Col>
+                    <Col sm='6' lg='4'>
                         <ProjectCard project={project} />
                     </Col>
                 ))}
