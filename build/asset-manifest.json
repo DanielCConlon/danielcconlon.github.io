@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.9d291480.css",
-    "main.js": "/react-portfolio/static/js/main.a36a875f.js",
+    "main.css": "/react-portfolio/static/css/main.1f08090b.css",
+    "main.js": "/react-portfolio/static/js/main.95b10d86.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/travel-blog.png": "/react-portfolio/static/media/travel-blog.1326e033987b502d0f77.png",
     "static/media/CarbonFootprint.png": "/react-portfolio/static/media/CarbonFootprint.b22fa72ff0478a07d36f.png",
@@ -12,12 +12,12 @@
     "static/media/social-network-api.PNG": "/react-portfolio/static/media/social-network-api.df146738f2245293b313.PNG",
     "static/media/code-quiz.PNG": "/react-portfolio/static/media/code-quiz.9de6b09abb91bd9e236d.PNG",
     "index.html": "/react-portfolio/index.html",
-    "main.9d291480.css.map": "/react-portfolio/static/css/main.9d291480.css.map",
-    "main.a36a875f.js.map": "/react-portfolio/static/js/main.a36a875f.js.map",
+    "main.1f08090b.css.map": "/react-portfolio/static/css/main.1f08090b.css.map",
+    "main.95b10d86.js.map": "/react-portfolio/static/js/main.95b10d86.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d291480.css",
-    "static/js/main.a36a875f.js"
+    "static/css/main.1f08090b.css",
+    "static/js/main.95b10d86.js"
   ]
 }
