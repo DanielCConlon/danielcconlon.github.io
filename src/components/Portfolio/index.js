@@ -38,7 +38,7 @@ function Portfolio() {
             description: 'CMS-style blog site where you can publish articles, blog posts, and thoughts and opinions.',
             src: require('../../utils/images/tech-blog.PNG'),
             github: 'https://github.com/DanielCConlon/tech-blog',
-            livesite: 'https://safe-gorge-07664.herokuapp.com/'
+            livesite: 'https://protected-atoll-68410.herokuapp.com/'
         },
 
         {
@@ -46,7 +46,7 @@ function Portfolio() {
             description: 'Build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. You’ll use Express.js for routing, a MongoDB database, and the Mongoose ODM',
             src: require('../../utils/images/social-network-api.PNG'),
             github: 'https://github.com/DanielCConlon/social-network-api',
-            livesite: ''
+            
         },
 
         {
