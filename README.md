@@ -1,6 +1,6 @@
 # React Portfolio
 
-- GithubPages: http://DanielCConlon.github.io/react-portfolio
+- GithubPages: [http://DanielCConlon.github.io/react-portfolio](https://danielcconlon.github.io/)
 - Github URL: https://github.com/DanielCConlon/react-portfolio
 
 # Goal
